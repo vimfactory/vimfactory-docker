@@ -17,6 +17,8 @@ RUN chsh -s /bin/rbash you
 ADD ./data/bash_profile /home/you/.bash_profile
 ADD ./data/bashrc /home/you/.bashrc
 ADD ./data/sample.rb /home/you/
+RUN chown you:you /home/you/sample.rb
+RUN chmod 644 /home/you/sample.rb
 RUN chown root:root /home/you/.bash_profile
 RUN chmod 755 /home/you/.bash_profile
 RUN ln -s /usr/bin/vim /home/you/bin
