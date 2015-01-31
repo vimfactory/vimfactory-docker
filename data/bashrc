@@ -9,4 +9,4 @@ if [ -f /etc/bashrc ]; then
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-alias vim="vim sample.rb -u /home/you/vimrcs/vimrc_${HOSTNAME}"
+alias vim="vim sample.rb"
