@@ -10,3 +10,7 @@ if [ -f /etc/bashrc ]; then
 
 # User specific aliases and functions
 alias vim="vim sample.rb"
+alias exit="echo 'not found'"
+alias logout="echo 'not found'"
+
+PS1='\n「vim」と入力しEnterを押してください\n[Vim::factory]\$ '
