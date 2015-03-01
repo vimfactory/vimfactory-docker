@@ -2,8 +2,8 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
-  fi
+    . /etc/bashrc
+fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
@@ -14,3 +14,6 @@ alias exit="echo 'not found'"
 alias logout="echo 'not found'"
 
 PS1='\n「vim」と入力しEnterを押してください\n[Vim::factory]\$ '
+
+# vim automatically start
+vim
