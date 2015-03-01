@@ -16,3 +16,6 @@ HOSTNAME=`/usr/bin/hostname 2> /dev/null`
 ln -sf $HOME/vimrcs/vimrc_$HOSTNAME $HOME/.vimrc
 # set path
 export PATH=$HOME/bin
+
+# disable Ctrl+D
+export IGNOREEOF=10000
