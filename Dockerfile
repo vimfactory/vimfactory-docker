@@ -1,12 +1,12 @@
 FROM centos
 MAINTAINER Shinya Mori <g.vamos603@gmail.com>
 
-#パッケージインストール
+# パッケージインストール
 RUN yum update -y
 RUN yum install -y hostname
 RUN yum install -y vim
 
-#rbashの設定
+# rbashの設定
 RUN ln -s /bin/bash /bin/rbash
 RUN echo "/bin/rbash" >> /etc/shells
 
@@ -22,3 +22,7 @@ RUN chmod 644 /home/you/sample.rb
 RUN chown root:root /home/you/.bash_profile
 RUN chmod 755 /home/you/.bash_profile
 RUN ln -s /usr/bin/vim /home/you/bin
+
+# set vim colorscheme
+RUN mkdir -p /home/you/.vim/colors
+ADD ./data/colors/* /home/you/.vim/colors
