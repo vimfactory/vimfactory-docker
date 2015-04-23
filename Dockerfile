@@ -10,6 +10,9 @@ RUN yum install -y vim
 RUN ln -s /bin/bash /bin/rbash
 RUN echo "/bin/rbash" >> /etc/shells
 
+# boot shell
+ADD ./data/bootvim.sh /root/bootvim.sh
+
 # youユーザ設定
 RUN useradd you
 RUN mkdir /home/you/bin
@@ -25,4 +28,4 @@ RUN ln -s /usr/bin/vim /home/you/bin
 
 # set vim colorscheme
 RUN mkdir -p /home/you/.vim/colors
-ADD ./data/colors/* /home/you/.vim/colors
+ADD ./data/colors/* /home/you/.vim/colors/
