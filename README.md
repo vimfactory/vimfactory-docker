@@ -6,12 +6,12 @@ $ docker build -t mosuke5/vimonly .
 
 ## 実際の使い方
 ```
-$ sudo docker run -i -t -v /home/vagrant/vimrcs:/home/you/vimrcs:r mosuke5/vimonly su - you
+$ docker run -i -t -v /home/vimfactory/vimrcs:/home/you/vimrcs mosuke5/vimonly /root/bootvim.sh
 ```
 
 ## メンテなどでルートで入りたい場合
 ```
-$ sudo docker run -i -t -v /home/vagrant/vimrcs:/home/you/vimrcs:r mosuke5/vimonly /bin/bash
+$ docker run -i -t -v /home/vimfactory/vimrcs:/home/you/vimrcs mosuke5/vimonly /bin/bash
 ```
 
 ## docker push
