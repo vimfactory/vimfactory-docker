@@ -2,8 +2,8 @@
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-          . ~/.bashrc
-          fi
+    . ~/.bashrc
+fi
 
 # User specific environment and startup programs
 
@@ -19,3 +19,5 @@ export PATH=$HOME/bin
 
 # disable Ctrl+D
 export IGNOREEOF=10000
+
+vim

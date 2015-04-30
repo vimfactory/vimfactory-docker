@@ -14,6 +14,3 @@ alias exit="echo 'not found'"
 alias logout="echo 'not found'"
 
 PS1='\n「vim」と入力しEnterを押してください\n[Vim::factory]\$ '
-
-# vim automatically start
-\vim -u /home/you/vimrcs/vimrc_`hostname` sample.rb
