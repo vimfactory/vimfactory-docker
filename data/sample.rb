@@ -1,16 +1,22 @@
-# The Greeter class
-class Greeter
-  def initialize(name)
-    @name = name.capitalize
+# The Hello class
+class HelloWorld
+  Version = "1.0"
+
+  def initialize(myname="Ruby")
+    @name = myname
   end
 
-  def salute
-    puts "Hello #{@name}!"
+  def hello
+    print "Hello, world. I am ", @name, ".\n"
   end
 end
 
-# Create a new object
-g = Greeter.new("world")
+# Create new objects
+bob   = HelloWorld.new("Bob")
+alice = HelloWorld.new("Alice")
+ruby  = HelloWorld.new
 
-# Output "Hello World!"
-g.salute
+# Output
+bob.hello
+alice.hello
+ruby.hello
