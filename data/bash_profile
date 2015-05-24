@@ -20,4 +20,7 @@ export PATH=$HOME/bin
 # disable Ctrl+D
 export IGNOREEOF=10000
 
+# default extension
+export vimfactory_ext=rb
+
 vim

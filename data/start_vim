@@ -1,0 +1,2 @@
+#!/bin/bash
+vim sample.${vimfactory_ext}
