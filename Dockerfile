@@ -32,3 +32,7 @@ RUN ln -s /usr/bin/vim /home/you/bin
 # set vim colorscheme
 RUN mkdir -p /home/you/.vim/colors
 ADD ./data/colors/* /home/you/.vim/colors/
+
+# set vim plugin
+RUN mkdir -p /home/you/.vim/plugin
+ADD ./data/plugin/* /home/you/.vim/plugin/
