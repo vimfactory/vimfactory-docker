@@ -35,4 +35,5 @@ ADD ./data/colors/* /home/you/.vim/colors/
 
 # set vim plugin
 RUN mkdir -p /home/you/.vim/plugin
-ADD ./data/plugin/* /home/you/.vim/plugin/
+RUN mkdir -p /home/you/.vim/plugin_tmp
+ADD ./data/plugin/* /home/you/.vim/plugin_tmp/
