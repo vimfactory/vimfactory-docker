@@ -13,7 +13,7 @@ fi
 # set hostname
 HOSTNAME=`/usr/bin/hostname 2> /dev/null`
 # link vimrc
-ln -sf $HOME/vimrcs/vimrc_$HOSTNAME $HOME/.vimrc
+ln -sf $HOME/vimstorage/$HOSTNAME/vimrc $HOME/.vimrc
 # set path
 export PATH=$HOME/bin
 

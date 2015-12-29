@@ -1,4 +1,5 @@
 #!/bin/sh
-cp /home/you/vimrcs/vimrc_default /home/you/vimrcs/vimrc_`hostname`
-chmod 664 /home/you/vimrcs/vimrc_`hostname`
+mkdir -p /home/you/vimstorage/`hostname`/runtimepath/plugin
+cp /home/you/vimstorage/default/vimrc /home/you/vimstorage/`hostname`/vimrc
+chmod 664 /home/you/vimstorage/`hostname`/vimrc
 su - you
